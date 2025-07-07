@@ -14,7 +14,7 @@
 #' @importFrom processx process
 #'
 #' @export
-launch_data_viewer <- function(data, name = NULL, use_parquet = FALSE, port = 3000, timeout = 3, app_path = "/Applications/data_viewer.app/Contents/MacOS/data_viewer") {
+launch_data_viewer <- function(data, name = NULL, use_parquet = FALSE, port = 3000, timeout = 3, app_path = "/Applications/DataViewer.app/Contents/MacOS/data_viewer") {
   if (!is.data.frame(data)) {
     stop("data must be a data.frame")
   }
